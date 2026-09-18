@@ -6,7 +6,7 @@
   document.querySelectorAll("[data-support-email]").forEach(function (element) {
     var email = config.supportEmail || "js.appsupport8@gmail.com";
     element.textContent = email;
-    if (element.tagName === "A" && email.indexOf("{{") !== 0) {
+    if (element.tagName === "A") {
       element.href = "mailto:" + email;
     }
   });
